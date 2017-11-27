@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0025C0561FCC81D20018387D /* ScreenSaverTemplateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0025C0551FCC81D20018387D /* ScreenSaverTemplateView.h */; };
 		0025C0581FCC81D20018387D /* ScreenSaverTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025C0571FCC81D20018387D /* ScreenSaverTemplateView.m */; };
+		0025C0611FCC84EB0018387D /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0025C0601FCC84EB0018387D /* html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		0025C0551FCC81D20018387D /* ScreenSaverTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSaverTemplateView.h; sourceTree = "<group>"; };
 		0025C0571FCC81D20018387D /* ScreenSaverTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenSaverTemplateView.m; sourceTree = "<group>"; };
 		0025C0591FCC81D20018387D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0025C0601FCC84EB0018387D /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		0025C05F1FCC82150018387D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0025C0601FCC84EB0018387D /* html */,
 				0025C0591FCC81D20018387D /* Info.plist */,
 			);
 			path = Resources;
@@ -132,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0025C0611FCC84EB0018387D /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
