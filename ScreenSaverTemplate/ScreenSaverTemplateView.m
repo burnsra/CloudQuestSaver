@@ -28,6 +28,7 @@ NSString *_url;
 {
     [super startAnimation];
     if (self) {
+        [self configureWebView];
         [self loadWebView];
     }
 }
