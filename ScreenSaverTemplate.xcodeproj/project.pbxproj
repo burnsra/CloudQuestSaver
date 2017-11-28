@@ -10,6 +10,8 @@
 		000762611FCD7AD400D9DA10 /* ConfigureSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 0007625E1FCD7AD400D9DA10 /* ConfigureSheet.h */; };
 		000762621FCD7AD400D9DA10 /* ConfigureSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007625F1FCD7AD400D9DA10 /* ConfigureSheet.m */; };
 		000762631FCD7AD400D9DA10 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000762601FCD7AD400D9DA10 /* ConfigureSheet.xib */; };
+		000762671FCD957F00D9DA10 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 000762651FCD957F00D9DA10 /* thumbnail.png */; };
+		000762681FCD957F00D9DA10 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000762661FCD957F00D9DA10 /* thumbnail@2x.png */; };
 		000AC4D21FCCDFCE0049F6EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */; };
 		000AC4D71FCCDFCE0049F6EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000AC4D51FCCDFCE0049F6EE /* MainMenu.xib */; };
 		000AC4DA1FCCDFCE0049F6EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D91FCCDFCE0049F6EE /* main.m */; };
@@ -32,6 +34,8 @@
 		0007625E1FCD7AD400D9DA10 /* ConfigureSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureSheet.h; sourceTree = "<group>"; };
 		0007625F1FCD7AD400D9DA10 /* ConfigureSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigureSheet.m; sourceTree = "<group>"; };
 		000762601FCD7AD400D9DA10 /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		000762651FCD957F00D9DA10 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		000762661FCD957F00D9DA10 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		000AC4CE1FCCDFCE0049F6EE /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000AC4D01FCCDFCE0049F6EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		000762641FCD7AE300D9DA10 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				000762651FCD957F00D9DA10 /* thumbnail.png */,
+				000762661FCD957F00D9DA10 /* thumbnail@2x.png */,
 				000762601FCD7AD400D9DA10 /* ConfigureSheet.xib */,
 			);
 			path = UI;
@@ -249,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				000762631FCD7AD400D9DA10 /* ConfigureSheet.xib in Resources */,
+				000762681FCD957F00D9DA10 /* thumbnail@2x.png in Resources */,
 				0025C0611FCC84EB0018387D /* html in Resources */,
+				000762671FCD957F00D9DA10 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
