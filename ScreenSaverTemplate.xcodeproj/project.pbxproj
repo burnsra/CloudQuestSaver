@@ -12,7 +12,7 @@
 		000762631FCD7AD400D9DA10 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000762601FCD7AD400D9DA10 /* ConfigureSheet.xib */; };
 		000762671FCD957F00D9DA10 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 000762651FCD957F00D9DA10 /* thumbnail.png */; };
 		000762681FCD957F00D9DA10 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000762661FCD957F00D9DA10 /* thumbnail@2x.png */; };
-		0007626A1FCDA5ED00D9DA10 /* ScreenSaverTemplate.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0025C0521FCC81D20018387D /* ScreenSaverTemplate.saver */; };
+		0007626A1FCDA5ED00D9DA10 /* ScreenSaver Template.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0025C0521FCC81D20018387D /* ScreenSaver Template.saver */; };
 		000AC4D21FCCDFCE0049F6EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */; };
 		000AC4D71FCCDFCE0049F6EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000AC4D51FCCDFCE0049F6EE /* MainMenu.xib */; };
 		000AC4DA1FCCDFCE0049F6EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D91FCCDFCE0049F6EE /* main.m */; };
@@ -38,7 +38,7 @@
 			dstPath = "~/Library/Screen Savers";
 			dstSubfolderSpec = 0;
 			files = (
-				0007626A1FCDA5ED00D9DA10 /* ScreenSaverTemplate.saver in CopyFiles */,
+				0007626A1FCDA5ED00D9DA10 /* ScreenSaver Template.saver in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,7 @@
 		000AC4D81FCCDFCE0049F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AC4D91FCCDFCE0049F6EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		000AC4E01FCCE07F0049F6EE /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
-		0025C0521FCC81D20018387D /* ScreenSaverTemplate.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenSaverTemplate.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		0025C0521FCC81D20018387D /* ScreenSaver Template.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScreenSaver Template.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0025C0551FCC81D20018387D /* ScreenSaverTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSaverTemplateView.h; sourceTree = "<group>"; };
 		0025C0571FCC81D20018387D /* ScreenSaverTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenSaverTemplateView.m; sourceTree = "<group>"; };
 		0025C0591FCC81D20018387D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		0025C0531FCC81D20018387D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0025C0521FCC81D20018387D /* ScreenSaverTemplate.saver */,
+				0025C0521FCC81D20018387D /* ScreenSaver Template.saver */,
 				000AC4CE1FCCDFCE0049F6EE /* Runner.app */,
 			);
 			name = Products;
@@ -194,9 +194,9 @@
 			productReference = 000AC4CE1FCCDFCE0049F6EE /* Runner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0025C0511FCC81D20018387D /* ScreenSaverTemplate */ = {
+		0025C0511FCC81D20018387D /* ScreenSaver Template */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "ScreenSaverTemplate" */;
+			buildConfigurationList = 0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "ScreenSaver Template" */;
 			buildPhases = (
 				0025C04D1FCC81D20018387D /* Sources */,
 				0025C04E1FCC81D20018387D /* Frameworks */,
@@ -208,9 +208,9 @@
 			);
 			dependencies = (
 			);
-			name = ScreenSaverTemplate;
+			name = "ScreenSaver Template";
 			productName = ScreenSaverTemplate;
-			productReference = 0025C0521FCC81D20018387D /* ScreenSaverTemplate.saver */;
+			productReference = 0025C0521FCC81D20018387D /* ScreenSaver Template.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0025C0511FCC81D20018387D /* ScreenSaverTemplate */,
+				0025C0511FCC81D20018387D /* ScreenSaver Template */,
 				000AC4CD1FCCDFCE0049F6EE /* Runner */,
 			);
 		};
@@ -302,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		0007624F1FCCF14400D9DA10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0025C0511FCC81D20018387D /* ScreenSaverTemplate */;
+			target = 0025C0511FCC81D20018387D /* ScreenSaver Template */;
 			targetProxy = 0007624E1FCCF14400D9DA10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "ScreenSaverTemplate" */ = {
+		0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "ScreenSaver Template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0025C05D1FCC81D20018387D /* Debug */,
