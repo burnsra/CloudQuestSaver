@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		000AC4D21FCCDFCE0049F6EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */; };
-		000AC4D41FCCDFCE0049F6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000AC4D31FCCDFCE0049F6EE /* Assets.xcassets */; };
 		000AC4D71FCCDFCE0049F6EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000AC4D51FCCDFCE0049F6EE /* MainMenu.xib */; };
 		000AC4DA1FCCDFCE0049F6EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D91FCCDFCE0049F6EE /* main.m */; };
 		0025C0561FCC81D20018387D /* ScreenSaverTemplateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0025C0551FCC81D20018387D /* ScreenSaverTemplateView.h */; };
@@ -30,7 +29,6 @@
 		000AC4CE1FCCDFCE0049F6EE /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000AC4D01FCCDFCE0049F6EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		000AC4D31FCCDFCE0049F6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000AC4D61FCCDFCE0049F6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		000AC4D81FCCDFCE0049F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AC4D91FCCDFCE0049F6EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,16 +58,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0007625C1FCD7A4A00D9DA10 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				000AC4D51FCCDFCE0049F6EE /* MainMenu.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0007625D1FCD7A5300D9DA10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000AC4D81FCCDFCE0049F6EE /* Info.plist */,
+				000AC4E01FCCE07F0049F6EE /* Runner.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		000AC4CF1FCCDFCE0049F6EE /* Runner */ = {
 			isa = PBXGroup;
 			children = (
 				000AC4D01FCCDFCE0049F6EE /* AppDelegate.h */,
 				000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */,
-				000AC4D31FCCDFCE0049F6EE /* Assets.xcassets */,
-				000AC4D51FCCDFCE0049F6EE /* MainMenu.xib */,
-				000AC4D81FCCDFCE0049F6EE /* Info.plist */,
 				000AC4D91FCCDFCE0049F6EE /* main.m */,
-				000AC4E01FCCE07F0049F6EE /* Runner.entitlements */,
+				0007625D1FCD7A5300D9DA10 /* Resources */,
+				0007625C1FCD7A4A00D9DA10 /* UI */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -209,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000AC4D41FCCDFCE0049F6EE /* Assets.xcassets in Resources */,
 				000AC4D71FCCDFCE0049F6EE /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,11 +279,10 @@
 		000AC4DC1FCCDFCE0049F6EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HUH268L2E;
-				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Runner/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.Runner;
@@ -282,11 +293,10 @@
 		000AC4DD1FCCDFCE0049F6EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HUH268L2E;
-				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Runner/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.Runner;
