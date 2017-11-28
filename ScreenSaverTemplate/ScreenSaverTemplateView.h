@@ -9,5 +9,7 @@
 #import <ScreenSaver/ScreenSaver.h>
 
 @interface ScreenSaverTemplateView : ScreenSaverView
-
+{
+    id  configureSheet;
+}
 @end

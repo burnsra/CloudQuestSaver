@@ -82,4 +82,9 @@
     return windowRect;
 }
 
+- (IBAction)showPreferences:(NSObject *)sender
+{
+    [_window beginSheet:_view.configureSheet completionHandler:nil];
+}
+
 @end
