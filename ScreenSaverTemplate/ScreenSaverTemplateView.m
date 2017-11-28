@@ -35,9 +35,6 @@ NSString *_url;
 - (void)stopAnimation
 {
     [super stopAnimation];
-    if (self) {
-        [self unloadWebView];
-    }
 }
 
 - (void)drawRect:(NSRect)rect
@@ -90,12 +87,6 @@ NSString *_url;
 {
     [_webView setMainFrameURL:[_url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     [_webView reloadFromOrigin:nil];
-}
-
-- (void)unloadWebView
-{
-    [_webView removeFromSuperview];
-    [_webView close];
 }
 
 @end
