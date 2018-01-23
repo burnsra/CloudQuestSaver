@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4c85sh');
-  src:  url('fonts/icomoon.eot?4c85sh#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4c85sh') format('truetype'),
-    url('fonts/icomoon.woff?4c85sh') format('woff'),
-    url('fonts/icomoon.svg?4c85sh#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?l4poet');
+  src:  url('fonts/icomoon.eot?l4poet#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l4poet') format('truetype'),
+    url('fonts/icomoon.woff?l4poet') format('woff'),
+    url('fonts/icomoon.svg?l4poet#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-forseti-logo:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-kubernetes-logo:before {
+  content: "\e903";
+  color: #fff;
+}
 .icon-google-cloud-platform-logo:before {
   content: "\e901";
 }
