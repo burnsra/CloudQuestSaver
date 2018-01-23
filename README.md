@@ -6,6 +6,22 @@
 
 - [Preview](https://rawgit.com/burnsra/GoogleCloudPlatformScreenSaver/master/GoogleCloudPlatform/Resources/html/index.html)
 
+## Installation
+
+After you install homebrew-cask, run the following command:
+
+```sh
+$ brew tap burnsra/tap
+```
+
+You can now install the Google Cloud Platform saver cask.
+
+```sh
+$ brew cask install google-cloud-platform-saver
+```
+
+[Direct Downloads](https://www.robertburns.me/dist/google-cloud-platform-saver.zip)
+
 ## Acknowledgements
 
 - [icomoon](https://icomoon.io/) by [Roonas](http://roonas.com/)
