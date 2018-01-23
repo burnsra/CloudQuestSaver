@@ -6,7 +6,7 @@ html, body {
   overflow: hidden; }
 
 body {
-  -webkit-animation: colors linear 60s infinite;
+  -webkit-animation: colors linear 120s infinite;
   font-family: Octicons;
   font-size: 36px;
   color: #fff; }
@@ -65,16 +65,32 @@ body {
     opacity: 0.1; } }
 @-webkit-keyframes colors {
   0% {
-    background-color: #3cba54; }
+      background-color: #4285f4; }
+  5% {
+      background-color: #4285f4; }
 
+  20% {
+      background-color: #ea4335; }
   25% {
-    background-color: #f4c20d; }
+      background-color: #ea4335; }
+  30% {
+      background-color: #ea4335; }
 
+  45% {
+      background-color: #34a853; }
   50% {
-    background-color: #db3236; }
+      background-color: #34a853; }
+  55% {
+      background-color: #34a853; }
 
+  70% {
+      background-color: #fbbc05; }
   75% {
-    background-color: #4885ed; }
+      background-color: #fbbc05; }
+  80% {
+      background-color: #fbbc05; }
 
+  95% {
+    background-color: #4285f4; }
   100% {
-    background-color: #3cba54; } }
+    background-color: #4285f4; } }
