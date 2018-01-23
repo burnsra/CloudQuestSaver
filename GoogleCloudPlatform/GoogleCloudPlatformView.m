@@ -1,16 +1,16 @@
 //
-//  ScreenSaverTemplateView.m
-//  ScreenSaverTemplate
+//  GoogleCloudPlatformView.m
+//  GoogleCloudPlatform
 //
 //  Created by Robert Burns on 11/27/17.
 //  Copyright © 2017 Robert Burns. All rights reserved.
 //
 
 #import "ConfigureSheet.h"
-#import "ScreenSaverTemplateView.h"
+#import "GoogleCloudPlatformView.h"
 #import <WebKit/WebKit.h>
 
-@implementation ScreenSaverTemplateView
+@implementation GoogleCloudPlatformView
 
 WebView *_webView;
 NSString *_url;

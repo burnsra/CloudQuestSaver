@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Robert Burns. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>ScreenSaverTemplateView</string>
+	<string>GoogleCloudPlatformView</string>
 </dict>
 </plist>

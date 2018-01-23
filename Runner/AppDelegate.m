@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <ScreenSaver/ScreenSaver.h>
-//#import "ScreenSaverTemplateView.h"
+//#import "GoogleCloudPlatformView.h"
 
 @interface AppDelegate ()
 
@@ -66,7 +66,7 @@
 - (NSBundle *)loadSaverBundle
 {
     NSBundle *myBundle = [NSBundle bundleForClass:AppDelegate.self];
-    NSURL *saverBundleURL = [[myBundle.bundleURL URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"ScreenSaverTemplate.saver" isDirectory: YES];
+    NSURL *saverBundleURL = [[myBundle.bundleURL URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"Google Cloud Platform.saver" isDirectory: YES];
     NSBundle *bundle = [NSBundle bundleWithURL:saverBundleURL];
     [bundle load];
     return bundle;
