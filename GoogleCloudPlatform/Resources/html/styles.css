@@ -66,31 +66,23 @@ body {
 @-webkit-keyframes colors {
   0% {
       background-color: #4285f4; }
-  5% {
+  20% {
       background-color: #4285f4; }
 
-  20% {
-      background-color: #ea4335; }
   25% {
       background-color: #ea4335; }
-  30% {
+  45% {
       background-color: #ea4335; }
 
-  45% {
-      background-color: #34a853; }
   50% {
       background-color: #34a853; }
-  55% {
+  70% {
       background-color: #34a853; }
 
-  70% {
-      background-color: #fbbc05; }
   75% {
       background-color: #fbbc05; }
-  80% {
+  95% {
       background-color: #fbbc05; }
 
-  95% {
-    background-color: #4285f4; }
   100% {
     background-color: #4285f4; } }
