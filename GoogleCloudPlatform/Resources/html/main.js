@@ -31,8 +31,8 @@
 
         Saver.prototype.setSize = function() {
             var left, top;
-            this.screenWidth = window.outerWidth;
-            this.screenHeight = window.outerHeight;
+            this.screenWidth = document.body.getBoundingClientRect().width;
+            this.screenHeight = document.body.getBoundingClientRect().height;
             this.cols = Math.ceil(this.screenWidth / this.itemSize);
             if (this.cols % 2 === 1) {
                 this.cols += 1;
