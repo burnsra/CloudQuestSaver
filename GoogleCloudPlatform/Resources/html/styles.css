@@ -6,7 +6,6 @@ html, body {
   overflow: hidden; }
 
 body {
-  -webkit-animation: colors linear 120s infinite;
   font-family: Octicons;
   font-size: 36px;
   color: #fff; }
@@ -63,26 +62,3 @@ body {
 
   100% {
     opacity: 0.1; } }
-@-webkit-keyframes colors {
-  0% {
-      background-color: #4285f4; }
-  20% {
-      background-color: #4285f4; }
-
-  25% {
-      background-color: #ea4335; }
-  45% {
-      background-color: #ea4335; }
-
-  50% {
-      background-color: #34a853; }
-  70% {
-      background-color: #34a853; }
-
-  75% {
-      background-color: #fbbc05; }
-  95% {
-      background-color: #fbbc05; }
-
-  100% {
-    background-color: #4285f4; } }

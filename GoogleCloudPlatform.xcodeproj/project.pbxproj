@@ -19,6 +19,8 @@
 		0025C0561FCC81D20018387D /* GoogleCloudPlatformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0025C0551FCC81D20018387D /* GoogleCloudPlatformView.h */; };
 		0025C0581FCC81D20018387D /* GoogleCloudPlatformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025C0571FCC81D20018387D /* GoogleCloudPlatformView.m */; };
 		0025C0611FCC84EB0018387D /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0025C0601FCC84EB0018387D /* html */; };
+		00C2E1C62078E6EF002F1B00 /* NSColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2E1C52078E6EF002F1B00 /* NSColor+Hex.m */; };
+		00DFB4A32077D6DF001A7828 /* WebPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DFB4A22077D6DF001A7828 /* WebPreferences.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		0025C0571FCC81D20018387D /* GoogleCloudPlatformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCloudPlatformView.m; sourceTree = "<group>"; };
 		0025C0591FCC81D20018387D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0025C0601FCC84EB0018387D /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		00C2E1C52078E6EF002F1B00 /* NSColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Hex.m"; sourceTree = "<group>"; };
+		00C2E1C72078E703002F1B00 /* NSColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+Hex.h"; sourceTree = "<group>"; };
+		00DFB4A22077D6DF001A7828 /* WebPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPreferences.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +151,8 @@
 				0007625F1FCD7AD400D9DA10 /* ConfigureSheet.m */,
 				0025C0551FCC81D20018387D /* GoogleCloudPlatformView.h */,
 				0025C0571FCC81D20018387D /* GoogleCloudPlatformView.m */,
+				00DFB4A22077D6DF001A7828 /* WebPreferences.m */,
+				00C2E1C82078ED4A002F1B00 /* Extensions */,
 				0025C05F1FCC82150018387D /* Resources */,
 				000762641FCD7AE300D9DA10 /* UI */,
 			);
@@ -159,6 +166,15 @@
 				0025C0591FCC81D20018387D /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		00C2E1C82078ED4A002F1B00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00C2E1C52078E6EF002F1B00 /* NSColor+Hex.m */,
+				00C2E1C72078E703002F1B00 /* NSColor+Hex.h */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DFB4A32077D6DF001A7828 /* WebPreferences.m in Sources */,
 				000762621FCD7AD400D9DA10 /* ConfigureSheet.m in Sources */,
+				00C2E1C62078E6EF002F1B00 /* NSColor+Hex.m in Sources */,
 				0025C0581FCC81D20018387D /* GoogleCloudPlatformView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
