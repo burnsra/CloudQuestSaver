@@ -15,21 +15,32 @@
 
 @implementation GoogleCloudPlatformView
 
+static BOOL firstInstance = true;
 
 NSArray *_myColorsArray;
+NSString *_myColors = @"#4285f4,#ea4335,#34a853,#fbbc05";
 NSString *_url;
 NSTimer *_timer;
 WebView *_webView;
-NSString *myColors = @"#4285f4,#ea4335,#34a853,#fbbc05";
 
-float colorAnimationDuration = 3.0f;
-float colorAnimationInterval = 30.0f;
-int currentColor = 0;
-
+float colorAnimationDuration = 2.0f;
+float colorAnimationInterval = 10.0f;
+int currentColor;
 
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
+
 {
     self = [super initWithFrame:frame isPreview:isPreview];
+    preview = primaryMonitor = false;
+
+    if(isPreview) {
+        preview = true;
+    } else {
+        if(firstInstance) {
+            primaryMonitor = true;
+            firstInstance = false;
+        }
+    }
     if (self) {
         [self initialize];
     }
@@ -57,7 +68,7 @@ int currentColor = 0;
 
 - (BOOL)hasConfigureSheet
 {
-    return YES;
+    return true;
 }
 
 - (NSWindow*)configureSheet
@@ -69,6 +80,16 @@ int currentColor = 0;
     return [configureSheet window];
 }
 
+- (void)configureWebBackground
+{
+    self.layer = [CALayer layer];
+    self.layer.backgroundColor = [self getColor:currentColor % _myColorsArray.count].CGColor;
+    self.layer.frame = NSRectToCGRect(self.bounds);
+    self.layer.needsDisplayOnBoundsChange = true;
+    self.wantsLayer = true;
+    //[self.layer setNeedsDisplay];
+}
+
 - (void)configureWebUrl
 {
     _url = [NSString stringWithFormat:@"file://%@/html/index.html", [[NSBundle bundleForClass:[self class]] resourcePath]];
@@ -77,30 +98,32 @@ int currentColor = 0;
 - (void)configureWebView
 {
     WebPreferences* prefs = [_webView preferences];
-    [prefs setAccelerated2dCanvasEnabled:YES];
-    [prefs setAcceleratedDrawingEnabled:YES];
-    [prefs setCanvasUsesAcceleratedDrawing:YES];
-    [prefs setAcceleratedCompositingEnabled:YES];
+    [prefs setAccelerated2dCanvasEnabled:true];
+    [prefs setAcceleratedCompositingEnabled:true];
+    [prefs setAcceleratedDrawingEnabled:true];
+    [prefs setCanvasUsesAcceleratedDrawing:true];
 
     _webView = [[WebView alloc] initWithFrame:[self bounds]];
-    [_webView setShouldUpdateWhileOffscreen:YES];
+    [_webView setAutoresizesSubviews:true];
     [_webView setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
-    [_webView setAutoresizesSubviews:YES];
-    [_webView setDrawsBackground:NO];
-    [_webView setMaintainsBackForwardList:NO];
+    [_webView setDrawsBackground:false];
+    [_webView setMaintainsBackForwardList:false];
     [_webView setPreferences:prefs];
-    [_webView setWantsLayer:YES];
-    _webView.layer.backgroundColor = [self getColor:currentColor % _myColorsArray.count].CGColor;
+    [_webView setShouldUpdateWhileOffscreen:true];
+    //[_webView setWantsLayer:YES];
+    //_webView.layer.backgroundColor = [self getColor:currentColor % _myColorsArray.count].CGColor;
 
     [self addSubview:_webView];
 }
 
 - (void)initialize
 {
-    _myColorsArray = [myColors componentsSeparatedByString:@","];
-    _timer = [NSTimer scheduledTimerWithTimeInterval:colorAnimationInterval target:self selector:@selector(updateTimer) userInfo:nil repeats:true];
+    _myColorsArray = [_myColors componentsSeparatedByString:@","];
+    currentColor = 0;
+    [self configureWebBackground];
     [self configureWebUrl];
     [self configureWebView];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:colorAnimationInterval target:self selector:@selector(updateTimer) userInfo:nil repeats:true];
 }
 
 - (void)loadWebView
@@ -108,7 +131,6 @@ int currentColor = 0;
     [_webView setMainFrameURL:[_url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     [_webView reloadFromOrigin:nil];
 }
-
 
 - (CAAnimation*)displayAnimationForKeyPath:(NSString*)keyPath from:(NSColor*)from to:(NSColor*)to duration:(float)duration
 {
@@ -118,7 +140,7 @@ int currentColor = 0;
     animation.toValue               = (id)to.CGColor;
     animation.duration              = duration;
     animation.fillMode              = kCAFillModeForwards;
-    animation.removedOnCompletion   = NO;
+    animation.removedOnCompletion   = false;
     return animation;
 }
 
@@ -128,20 +150,23 @@ int currentColor = 0;
 
 - (void)colorCycle
 {
-    [[_webView layer] removeAllAnimations];
+    [[self layer] removeAllAnimations];
     CAAnimation *animation = [self
                               displayAnimationForKeyPath:@"backgroundColor"
                               from: [self getColor:(currentColor % _myColorsArray.count)]
                               to: [self getColor:((currentColor + 1) % _myColorsArray.count)]
                               duration: colorAnimationDuration
                               ];
-    [[_webView layer] addAnimation:animation forKey:@"backgroundColor"];
-    currentColor++;
+    [[self layer] addAnimation:animation forKey:@"backgroundColor"];
+    NSArray *screenArray = [NSScreen screens];
+    NSInteger screenCount = [screenArray count];
+    if ([[[self window] screen] isEqual:[[NSScreen screens] objectAtIndex:screenCount - 1]] || preview) {
+        currentColor++;
+    }
 }
 
 - (void)updateTimer {
     [self colorCycle];
 }
-
 
 @end

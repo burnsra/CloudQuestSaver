@@ -11,5 +11,7 @@
 @interface GoogleCloudPlatformView : ScreenSaverView
 {
     id  configureSheet;
+    BOOL preview;
+    BOOL primaryMonitor;
 }
 @end
