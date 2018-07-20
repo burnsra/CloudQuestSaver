@@ -10,6 +10,8 @@
 
 [Direct Downloads](https://github.com/burnsra/CloudQuestSaver/releases/download/v1.0/CloudQuest.zip)
 
+Extract the archive and double-click the CloudQuest.saver file.  You will be prompted to install for all users or just yourself.  After installation select the CloudQuest Screen Saver in System Preferences.
+
 ## Acknowledgements
 
 - [icomoon](https://icomoon.io/) by [Roonas](http://roonas.com/)
