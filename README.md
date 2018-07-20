@@ -4,7 +4,7 @@
 
 **CloudQuest Screen Saver** is a MacOS screen saver to showcase CloudQuest product iconography.  The example HTML content is based upon octoscreen, referenced in the [acknowledgements](#acknowledgements) section below.
 
-- [Preview](https://rawgit.com/burnsra/CloudQuestScreenSaver/master/CloudQuest/Resources/html/index.html?animate)
+- [Preview](https://cdn.rawgit.com/burnsra/CloudQuestSaver/0bc6db47/CloudQuest/Resources/html/index.html?animate)
 
 ## Installation
 
