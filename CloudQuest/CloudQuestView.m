@@ -38,7 +38,6 @@ struct Saver {
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     preview = primaryMonitor = false;
-    NSLog(@"initWithFrame 1 Preview: %hhd", preview);
 
     if(isPreview) {
         preview = true;
@@ -48,7 +47,6 @@ struct Saver {
             firstInstance = false;
         }
     }
-    NSLog(@"initWithFrame 2 Preview: %hhd", preview);
     if (self) {
         [self initialize];
     }
@@ -168,7 +166,6 @@ struct Saver {
     [[self layer] addAnimation:animation forKey:@"backgroundColor"];
     NSArray *screenArray = [NSScreen screens];
     NSInteger screenCount = [screenArray count];
-    NSLog(@"colorCycle Preview: %hhd", preview);
     if ([[[self window] screen] isEqual:[[NSScreen screens] objectAtIndex:screenCount - 1]]) {
         currentColor++;
     }
