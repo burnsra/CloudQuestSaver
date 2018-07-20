@@ -8,18 +8,6 @@
 
 ## Installation
 
-After you install homebrew-cask, run the following command:
-
-```sh
-$ brew tap burnsra/tap
-```
-
-You can now install the CloudQuest saver cask.
-
-```sh
-$ brew cask install google-cloud-platform-saver
-```
-
 [Direct Downloads](https://www.robertburns.me/dist/google-cloud-platform-saver.zip)
 
 ## Acknowledgements
