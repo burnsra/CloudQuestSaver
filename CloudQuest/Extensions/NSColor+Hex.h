@@ -1,6 +1,6 @@
 //
 //  NSColor+Hex.h
-//  GoogleCloudPlatform
+//  CloudQuest
 //
 //  Created by Robert Burns on 4/7/18.
 //  Copyright © 2018 Robert Burns. All rights reserved.

@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 Robert Burns. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>GoogleCloudPlatformView</string>
+	<string>CloudQuestView</string>
 </dict>
 </plist>

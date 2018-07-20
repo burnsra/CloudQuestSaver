@@ -1,10 +1,10 @@
-# Google Cloud Platform Screen Saver
+# CloudQuest Screen Saver
 
 ## Overview
 
-**Google Cloud Platform Screen Saver** is a MacOS screen saver to showcase Google Cloud Platform product iconography.  The example HTML content is based upon octoscreen, referenced in the [acknowledgements](#acknowledgements) section below.
+**CloudQuest Screen Saver** is a MacOS screen saver to showcase CloudQuest product iconography.  The example HTML content is based upon octoscreen, referenced in the [acknowledgements](#acknowledgements) section below.
 
-- [Preview](https://rawgit.com/burnsra/GoogleCloudPlatformScreenSaver/master/GoogleCloudPlatform/Resources/html/index.html)
+- [Preview](https://rawgit.com/burnsra/CloudQuestScreenSaver/master/CloudQuest/Resources/html/index.html?animate)
 
 ## Installation
 
@@ -14,7 +14,7 @@ After you install homebrew-cask, run the following command:
 $ brew tap burnsra/tap
 ```
 
-You can now install the Google Cloud Platform saver cask.
+You can now install the CloudQuest saver cask.
 
 ```sh
 $ brew cask install google-cloud-platform-saver
@@ -33,4 +33,4 @@ Do you want to improve the app or add any useful features? Please go ahead and c
 
 ## License
 
-[MIT](https://github.com/burnsra/GoogleCloudPlatformScreenSaver/blob/master/LICENSE) © Robert Burns
+[MIT](https://github.com/burnsra/CloudQuestScreenSaver/blob/master/LICENSE) © Robert Burns

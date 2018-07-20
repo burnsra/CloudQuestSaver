@@ -33,7 +33,7 @@ body {
   margin-right: -20px;
   box-sizing: border-box;
   font-size: 64px;
-  -webkit-animation: logo-fading 15s infinite; }
+  -webkit-animation: logo-fading 20s infinite; }
 
 .fading {
   -webkit-animation: fading 4s 1; }

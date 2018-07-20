@@ -1,6 +1,6 @@
 //
-//  GoogleCloudPlatformView.h
-//  GoogleCloudPlatform
+//  CloudQuestView.h
+//  CloudQuest
 //
 //  Created by Robert Burns on 11/27/17.
 //  Copyright © 2017 Robert Burns. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <ScreenSaver/ScreenSaver.h>
 
-@interface GoogleCloudPlatformView : ScreenSaverView
+@interface CloudQuestView : ScreenSaverView
 {
     id  configureSheet;
     BOOL preview;

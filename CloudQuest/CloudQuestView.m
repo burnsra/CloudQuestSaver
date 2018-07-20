@@ -1,19 +1,19 @@
 //
-//  GoogleCloudPlatformView.m
-//  GoogleCloudPlatform
+//  CloudQuestView.m
+//  CloudQuest
 //
 //  Created by Robert Burns on 11/27/17.
 //  Copyright © 2017 Robert Burns. All rights reserved.
 //
 
 #import "ConfigureSheet.h"
-#import "GoogleCloudPlatformView.h"
+#import "CloudQuestView.h"
 #import "NSColor+Hex.h"
 #import "WebPreferences.m"
 #import <QuartzCore/QuartzCore.h>
 #import <WebKit/WebKit.h>
 
-@implementation GoogleCloudPlatformView
+@implementation CloudQuestView
 
 static BOOL firstInstance = true;
 
@@ -23,15 +23,22 @@ NSString *_url;
 NSTimer *_timer;
 WebView *_webView;
 
+struct Saver MySaver;
+
 float colorAnimationDuration = 2.0f;
 float colorAnimationInterval = 10.0f;
 int currentColor;
+
+struct Saver {
+    int   currentColor;
+};
 
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     preview = primaryMonitor = false;
+    NSLog(@"initWithFrame 1 Preview: %hhd", preview);
 
     if(isPreview) {
         preview = true;
@@ -41,6 +48,7 @@ int currentColor;
             firstInstance = false;
         }
     }
+    NSLog(@"initWithFrame 2 Preview: %hhd", preview);
     if (self) {
         [self initialize];
     }
@@ -83,11 +91,10 @@ int currentColor;
 - (void)configureWebBackground
 {
     self.layer = [CALayer layer];
-    self.layer.backgroundColor = [self getColor:currentColor % _myColorsArray.count].CGColor;
+    self.layer.backgroundColor = [self getColor:MySaver.currentColor % _myColorsArray.count].CGColor;
     self.layer.frame = NSRectToCGRect(self.bounds);
     self.layer.needsDisplayOnBoundsChange = true;
     self.wantsLayer = true;
-    //[self.layer setNeedsDisplay];
 }
 
 - (void)configureWebUrl
@@ -110,8 +117,6 @@ int currentColor;
     [_webView setMaintainsBackForwardList:false];
     [_webView setPreferences:prefs];
     [_webView setShouldUpdateWhileOffscreen:true];
-    //[_webView setWantsLayer:YES];
-    //_webView.layer.backgroundColor = [self getColor:currentColor % _myColorsArray.count].CGColor;
 
     [self addSubview:_webView];
 }
@@ -120,10 +125,13 @@ int currentColor;
 {
     _myColorsArray = [_myColors componentsSeparatedByString:@","];
     currentColor = 0;
+    MySaver.currentColor = currentColor;
     [self configureWebBackground];
     [self configureWebUrl];
     [self configureWebView];
-    _timer = [NSTimer scheduledTimerWithTimeInterval:colorAnimationInterval target:self selector:@selector(updateTimer) userInfo:nil repeats:true];
+    if (!preview) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:colorAnimationInterval target:self selector:@selector(updateTimer) userInfo:nil repeats:true];
+    }
 }
 
 - (void)loadWebView
@@ -160,7 +168,8 @@ int currentColor;
     [[self layer] addAnimation:animation forKey:@"backgroundColor"];
     NSArray *screenArray = [NSScreen screens];
     NSInteger screenCount = [screenArray count];
-    if ([[[self window] screen] isEqual:[[NSScreen screens] objectAtIndex:screenCount - 1]] || preview) {
+    NSLog(@"colorCycle Preview: %hhd", preview);
+    if ([[[self window] screen] isEqual:[[NSScreen screens] objectAtIndex:screenCount - 1]]) {
         currentColor++;
     }
 }

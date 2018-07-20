@@ -1,6 +1,6 @@
 //
 //  WebPreferences.m
-//  Google Cloud Platform
+//  CloudQuest
 //
 //  Created by Robert Burns on 4/6/18.
 //  Copyright © 2018 Robert Burns. All rights reserved.

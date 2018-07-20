@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?tmmz9t');
+  src:  url('fonts/icomoon.eot?tmmz9t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tmmz9t') format('truetype'),
+    url('fonts/icomoon.woff?tmmz9t') format('woff'),
+    url('fonts/icomoon.svg?tmmz9t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cloudquest:before {
+  content: "\e900";
+}
+.icon-google-cloud-logo:before {
+  content: "\e901";
+}
+.icon-google-cloud-platform-logo:before {
+  content: "\e902";
+}
+.icon-forseti-logo:before {
+  content: "\e903";
+}
+.icon-kubernetes-logo:before {
+  content: "\e904";
+}
+.icon-advanced-solutions-lab:before {
+  content: "\e905";
+}
+.icon-app-engine:before {
+  content: "\e906";
+}
+.icon-beyondcorp:before {
+  content: "\e907";
+}
+.icon-bigquery:before {
+  content: "\e908";
+}
+.icon-cloud-apis:before {
+  content: "\e909";
+}
+.icon-cloud-bigtable:before {
+  content: "\e90a";
+}
+.icon-cloud-cdn:before {
+  content: "\e90b";
+}
+.icon-cloud-dataflow:before {
+  content: "\e90c";
+}
+.icon-cloud-datalab:before {
+  content: "\e90d";
+}
+.icon-cloud-dataprep:before {
+  content: "\e90e";
+}
+.icon-cloud-dataproc:before {
+  content: "\e90f";
+}
+.icon-cloud-datastore:before {
+  content: "\e910";
+}
+.icon-cloud-deployment-manager:before {
+  content: "\e911";
+}
+.icon-cloud-dns:before {
+  content: "\e912";
+}
+.icon-cloud-endpoints:before {
+  content: "\e913";
+}
+.icon-cloud-external-ip-addresses:before {
+  content: "\e914";
+}
+.icon-cloud-firewall-rules:before {
+  content: "\e915";
+}
+.icon-cloud-functions:before {
+  content: "\e916";
+}
+.icon-cloud-iam:before {
+  content: "\e917";
+}
+.icon-cloud-interconnect:before {
+  content: "\e918";
+}
+.icon-cloud-iot-core:before {
+  content: "\e919";
+}
+.icon-cloud-jobs-api:before {
+  content: "\e91a";
+}
+.icon-cloud-load-balancing:before {
+  content: "\e91b";
+}
+.icon-cloud-machine-learning:before {
+  content: "\e91c";
+}
+.icon-cloud-natural-language-api:before {
+  content: "\e91d";
+}
+.icon-cloud-network:before {
+  content: "\e91e";
+}
+.icon-cloud-partner-interconnect:before {
+  content: "\e91f";
+}
+.icon-cloud-pubsub:before {
+  content: "\e920";
+}
+.icon-cloud-router:before {
+  content: "\e921";
+}
+.icon-cloud-routes:before {
+  content: "\e922";
+}
+.icon-cloud-spanner:before {
+  content: "\e923";
+}
+.icon-cloud-speech-api:before {
+  content: "\e924";
+}
+.icon-cloud-sql:before {
+  content: "\e925";
+}
+.icon-cloud-storage:before {
+  content: "\e926";
+}
+.icon-cloud-tools-for-visual-studio:before {
+  content: "\e927";
+}
+.icon-cloud-translation-api:before {
+  content: "\e928";
+}
+.icon-cloud-video-intelligence-api:before {
+  content: "\e929";
+}
+.icon-cloud-vision-api:before {
+  content: "\e92a";
+}
+.icon-cloud-vpn:before {
+  content: "\e92b";
+}
+.icon-compute-engine:before {
+  content: "\e92c";
+}
+.icon-container-builder:before {
+  content: "\e92d";
+}
+.icon-container-engine:before {
+  content: "\e92e";
+}
+.icon-container-optimized-os:before {
+  content: "\e92f";
+}
+.icon-container-registry:before {
+  content: "\e930";
+}
+.icon-data-loss-prevention-api:before {
+  content: "\e931";
+}
+.icon-data-studio:before {
+  content: "\e932";
+}
+.icon-data-transfer-appliance:before {
+  content: "\e933";
+}
+.icon-debugger:before {
+  content: "\e934";
+}
+.icon-error-reporting:before {
+  content: "\e935";
+}
+.icon-generic-gcp:before {
+  content: "\e936";
+}
+.icon-genomics:before {
+  content: "\e937";
+}
+.icon-google-plugin-for-eclipse:before {
+  content: "\e938";
+}
+.icon-gpu:before {
+  content: "\e939";
+}
+.icon-identity-aware-proxy:before {
+  content: "\e93a";
+}
+.icon-key-management-service:before {
+  content: "\e93b";
+}
+.icon-logging:before {
+  content: "\e93c";
+}
+.icon-monitoring:before {
+  content: "\e93d";
+}
+.icon-persistent-disk:before {
+  content: "\e93e";
+}
+.icon-prediction-api:before {
+  content: "\e93f";
+}
+.icon-security-key-enforcement:before {
+  content: "\e940";
+}
+.icon-stackdriver:before {
+  content: "\e941";
+}
+.icon-trace:before {
+  content: "\e942";
+}
+.icon-virtual-private-cloud:before {
+  content: "\e943";
+}

@@ -12,12 +12,12 @@
 		000762631FCD7AD400D9DA10 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000762601FCD7AD400D9DA10 /* ConfigureSheet.xib */; };
 		000762671FCD957F00D9DA10 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 000762651FCD957F00D9DA10 /* thumbnail.png */; };
 		000762681FCD957F00D9DA10 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000762661FCD957F00D9DA10 /* thumbnail@2x.png */; };
-		0007626A1FCDA5ED00D9DA10 /* Google Cloud Platform.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0025C0521FCC81D20018387D /* Google Cloud Platform.saver */; };
+		0007626A1FCDA5ED00D9DA10 /* CloudQuest.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0025C0521FCC81D20018387D /* CloudQuest.saver */; };
 		000AC4D21FCCDFCE0049F6EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D11FCCDFCE0049F6EE /* AppDelegate.m */; };
 		000AC4D71FCCDFCE0049F6EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000AC4D51FCCDFCE0049F6EE /* MainMenu.xib */; };
 		000AC4DA1FCCDFCE0049F6EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC4D91FCCDFCE0049F6EE /* main.m */; };
-		0025C0561FCC81D20018387D /* GoogleCloudPlatformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0025C0551FCC81D20018387D /* GoogleCloudPlatformView.h */; };
-		0025C0581FCC81D20018387D /* GoogleCloudPlatformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025C0571FCC81D20018387D /* GoogleCloudPlatformView.m */; };
+		0025C0561FCC81D20018387D /* CloudQuestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0025C0551FCC81D20018387D /* CloudQuestView.h */; };
+		0025C0581FCC81D20018387D /* CloudQuestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025C0571FCC81D20018387D /* CloudQuestView.m */; };
 		0025C0611FCC84EB0018387D /* html in Resources */ = {isa = PBXBuildFile; fileRef = 0025C0601FCC84EB0018387D /* html */; };
 		00C2E1C62078E6EF002F1B00 /* NSColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2E1C52078E6EF002F1B00 /* NSColor+Hex.m */; };
 		00DFB4A32077D6DF001A7828 /* WebPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DFB4A22077D6DF001A7828 /* WebPreferences.m */; };
@@ -29,7 +29,7 @@
 			containerPortal = 0025C0491FCC81D20018387D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0025C0511FCC81D20018387D;
-			remoteInfo = GoogleCloudPlatform;
+			remoteInfo = CloudQuest;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,7 +40,7 @@
 			dstPath = "~/Library/Screen Savers";
 			dstSubfolderSpec = 0;
 			files = (
-				0007626A1FCDA5ED00D9DA10 /* Google Cloud Platform.saver in CopyFiles */,
+				0007626A1FCDA5ED00D9DA10 /* CloudQuest.saver in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +59,9 @@
 		000AC4D81FCCDFCE0049F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AC4D91FCCDFCE0049F6EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		000AC4E01FCCE07F0049F6EE /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
-		0025C0521FCC81D20018387D /* Google Cloud Platform.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Google Cloud Platform.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0025C0551FCC81D20018387D /* GoogleCloudPlatformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleCloudPlatformView.h; sourceTree = "<group>"; };
-		0025C0571FCC81D20018387D /* GoogleCloudPlatformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCloudPlatformView.m; sourceTree = "<group>"; };
+		0025C0521FCC81D20018387D /* CloudQuest.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CloudQuest.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0025C0551FCC81D20018387D /* CloudQuestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudQuestView.h; sourceTree = "<group>"; };
+		0025C0571FCC81D20018387D /* CloudQuestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudQuestView.m; sourceTree = "<group>"; };
 		0025C0591FCC81D20018387D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0025C0601FCC84EB0018387D /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		00C2E1C52078E6EF002F1B00 /* NSColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Hex.m"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		0025C0481FCC81D20018387D = {
 			isa = PBXGroup;
 			children = (
-				0025C0541FCC81D20018387D /* GoogleCloudPlatform */,
+				0025C0541FCC81D20018387D /* CloudQuest */,
 				000AC4CF1FCCDFCE0049F6EE /* Runner */,
 				0025C0531FCC81D20018387D /* Products */,
 			);
@@ -138,25 +138,25 @@
 		0025C0531FCC81D20018387D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0025C0521FCC81D20018387D /* Google Cloud Platform.saver */,
+				0025C0521FCC81D20018387D /* CloudQuest.saver */,
 				000AC4CE1FCCDFCE0049F6EE /* Runner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0025C0541FCC81D20018387D /* GoogleCloudPlatform */ = {
+		0025C0541FCC81D20018387D /* CloudQuest */ = {
 			isa = PBXGroup;
 			children = (
 				0007625E1FCD7AD400D9DA10 /* ConfigureSheet.h */,
 				0007625F1FCD7AD400D9DA10 /* ConfigureSheet.m */,
-				0025C0551FCC81D20018387D /* GoogleCloudPlatformView.h */,
-				0025C0571FCC81D20018387D /* GoogleCloudPlatformView.m */,
+				0025C0551FCC81D20018387D /* CloudQuestView.h */,
+				0025C0571FCC81D20018387D /* CloudQuestView.m */,
 				00DFB4A22077D6DF001A7828 /* WebPreferences.m */,
 				00C2E1C82078ED4A002F1B00 /* Extensions */,
 				0025C05F1FCC82150018387D /* Resources */,
 				000762641FCD7AE300D9DA10 /* UI */,
 			);
-			path = GoogleCloudPlatform;
+			path = CloudQuest;
 			sourceTree = "<group>";
 		};
 		0025C05F1FCC82150018387D /* Resources */ = {
@@ -184,7 +184,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0025C0561FCC81D20018387D /* GoogleCloudPlatformView.h in Headers */,
+				0025C0561FCC81D20018387D /* CloudQuestView.h in Headers */,
 				000762611FCD7AD400D9DA10 /* ConfigureSheet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,9 +210,9 @@
 			productReference = 000AC4CE1FCCDFCE0049F6EE /* Runner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0025C0511FCC81D20018387D /* Google Cloud Platform */ = {
+		0025C0511FCC81D20018387D /* CloudQuest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "Google Cloud Platform" */;
+			buildConfigurationList = 0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "CloudQuest" */;
 			buildPhases = (
 				0025C04D1FCC81D20018387D /* Sources */,
 				0025C04E1FCC81D20018387D /* Frameworks */,
@@ -224,9 +224,9 @@
 			);
 			dependencies = (
 			);
-			name = "Google Cloud Platform";
-			productName = GoogleCloudPlatform;
-			productReference = 0025C0521FCC81D20018387D /* Google Cloud Platform.saver */;
+			name = "CloudQuest";
+			productName = CloudQuest;
+			productReference = 0025C0521FCC81D20018387D /* CloudQuest.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0025C04C1FCC81D20018387D /* Build configuration list for PBXProject "GoogleCloudPlatform" */;
+			buildConfigurationList = 0025C04C1FCC81D20018387D /* Build configuration list for PBXProject "CloudQuest" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -266,7 +266,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0025C0511FCC81D20018387D /* Google Cloud Platform */,
+				0025C0511FCC81D20018387D /* CloudQuest */,
 				000AC4CD1FCCDFCE0049F6EE /* Runner */,
 			);
 		};
@@ -311,7 +311,7 @@
 				00DFB4A32077D6DF001A7828 /* WebPreferences.m in Sources */,
 				000762621FCD7AD400D9DA10 /* ConfigureSheet.m in Sources */,
 				00C2E1C62078E6EF002F1B00 /* NSColor+Hex.m in Sources */,
-				0025C0581FCC81D20018387D /* GoogleCloudPlatformView.m in Sources */,
+				0025C0581FCC81D20018387D /* CloudQuestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +320,7 @@
 /* Begin PBXTargetDependency section */
 		0007624F1FCCF14400D9DA10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0025C0511FCC81D20018387D /* Google Cloud Platform */;
+			target = 0025C0511FCC81D20018387D /* CloudQuest */;
 			targetProxy = 0007624E1FCCF14400D9DA10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,9 +474,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HUH268L2E;
-				INFOPLIST_FILE = GoogleCloudPlatform/Resources/Info.plist;
+				INFOPLIST_FILE = CloudQuest/Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.GoogleCloudPlatform;
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.CloudQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = saver;
 			};
@@ -488,9 +488,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HUH268L2E;
-				INFOPLIST_FILE = GoogleCloudPlatform/Resources/Info.plist;
+				INFOPLIST_FILE = CloudQuest/Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.GoogleCloudPlatform;
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.CloudQuest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = saver;
 			};
@@ -508,7 +508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0025C04C1FCC81D20018387D /* Build configuration list for PBXProject "GoogleCloudPlatform" */ = {
+		0025C04C1FCC81D20018387D /* Build configuration list for PBXProject "CloudQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0025C05A1FCC81D20018387D /* Debug */,
@@ -517,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "Google Cloud Platform" */ = {
+		0025C05C1FCC81D20018387D /* Build configuration list for PBXNativeTarget "CloudQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0025C05D1FCC81D20018387D /* Debug */,
