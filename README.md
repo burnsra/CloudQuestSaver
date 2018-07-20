@@ -8,7 +8,7 @@
 
 ## Installation
 
-[Direct Downloads](https://www.robertburns.me/dist/google-cloud-platform-saver.zip)
+[Direct Downloads](https://github.com/burnsra/CloudQuestSaver/releases/download/v1.0/CloudQuest.zip)
 
 ## Acknowledgements
 
@@ -21,4 +21,4 @@ Do you want to improve the app or add any useful features? Please go ahead and c
 
 ## License
 
-[MIT](https://github.com/burnsra/CloudQuestScreenSaver/blob/master/LICENSE) © Robert Burns
+[MIT](https://github.com/burnsra/CloudQuestSaver/blob/master/LICENSE) © Robert Burns
